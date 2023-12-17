@@ -1,16 +1,6 @@
-﻿using System;
+﻿using Accord.Vision.Detection;
 using System.Collections.Generic;
-using System.Linq;
-using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
-using System.Drawing.Imaging;
-using Accord.Imaging;
-using Accord.Vision;
-using Accord.Vision.Detection;
-using Accord.Imaging.Filters;
-using System.IO;
 
 namespace Phototagger
 {

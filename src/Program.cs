@@ -1,6 +1,5 @@
-﻿using System;
-using System.Drawing.Imaging;
-using Phototagger.UserOptions;
+﻿using Phototagger.UserOptions;
+using System;
 namespace Phototagger
 {
     internal class Program
