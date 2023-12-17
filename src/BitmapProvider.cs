@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.IO;
 
-namespace accordNetProject
+namespace Phototagger
 {
     internal class BitmapProvider
     {

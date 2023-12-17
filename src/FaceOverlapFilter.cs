@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace accordNetProject
+namespace Phototagger
 {
     /// <summary>
     /// ObjectDetectorSearchMode.Default can have false positives (smaller rectangles) within a larger face.

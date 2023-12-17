@@ -11,7 +11,7 @@ using Accord.Vision;
 using Accord.Vision.Detection;
 using Accord.Imaging.Filters;
 using System.IO;
-namespace accordNetProject
+namespace Phototagger
 {
     public class FacesHighlighter
     {
