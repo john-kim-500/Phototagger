@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
-
+using Phototagger.Imaging;
+using Phototagger.Faces;
 namespace Phototagger.UserOptions
 {
     internal class FaceExtractorRunner : IOptionRunner
@@ -27,7 +28,7 @@ namespace Phototagger.UserOptions
                 FacesDetector detector = new FacesDetector();
                 var faces = detector.Find(bitmap);
 
-                FaceClipper faceClipper = new FaceClipper();
+                ImagesClipper faceClipper = new ImagesClipper();
                 List<Bitmap> bitmaps = faceClipper.Clip(bitmap, faces);
                 int count = 1;
                 foreach (var faceBmp in bitmaps)

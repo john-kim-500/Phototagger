@@ -1,5 +1,6 @@
 ﻿using System.Drawing.Imaging;
-
+using Phototagger.Faces;
+using Phototagger.Imaging;
 namespace Phototagger.UserOptions
 {
     internal class HighlightRunner : IOptionRunner

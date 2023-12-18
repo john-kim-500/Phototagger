@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
 
-namespace Phototagger
+namespace Phototagger.Faces
 {
-    /// <summary>
-    /// ObjectDetectorSearchMode.Default can have false positives (smaller rectangles) within a larger face.
-    /// Assume that the largest rectangle is the one we're interested in.
-    /// </summary>
+    /// <inheritdoc  />
+    /// <remarks>
+    /// ObjectDetectorSearchMode.Default will have false positives (smaller rectangles) within a larger face.
+    /// This implementation assumes that the largest, non-child rectangle is the complete face.
+    /// </remarks>
     internal class FaceOverlapFilter : IOverlapFilter
     {
         public List<Rectangle> Filter(IEnumerable<Rectangle> faces)

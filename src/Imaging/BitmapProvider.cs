@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.IO;
 
-namespace Phototagger
+namespace Phototagger.Imaging
 {
     internal class BitmapProvider
     {

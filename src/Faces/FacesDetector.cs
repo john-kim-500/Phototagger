@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace Phototagger
+namespace Phototagger.Faces
 {
     public class FacesDetector
     {

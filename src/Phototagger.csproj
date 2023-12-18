@@ -70,14 +70,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BitmapProvider.cs" />
-    <Compile Include="FaceClipper.cs" />
-    <Compile Include="FacesDetector.cs" />
-    <Compile Include="IOverlapFilter.cs" />
-    <Compile Include="FaceOverlapFilter.cs" />
+    <Compile Include="Imaging\BitmapProvider.cs" />
+    <Compile Include="Imaging\ImagesClipper.cs" />
+    <Compile Include="Faces\FacesDetector.cs" />
+    <Compile Include="Faces\IOverlapFilter.cs" />
+    <Compile Include="Faces\FaceOverlapFilter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FacesHighlighter.cs" />
+    <Compile Include="Faces\FacesHighlighter.cs" />
     <Compile Include="UserOptions\FaceExtractorRunner.cs" />
     <Compile Include="UserOptions\HighlightRunner.cs" />
     <Compile Include="UserOptions\IOptionRunner.cs" />
