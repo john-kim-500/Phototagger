@@ -20,14 +20,16 @@ namespace Phototagger.UserOptions
         {
             BitmapProvider bitmapProvider = new BitmapProvider();
 
-            var bitmap = bitmapProvider.GetBitmap(_inputFile);
-            FacesDetector detector = new FacesDetector();
-            var faces = detector.Find(bitmap);
+            using (var bitmap = bitmapProvider.GetBitmap(_inputFile))
+            {
+                FacesDetector detector = new FacesDetector();
+                var faces = detector.Find(bitmap);
 
-            ImageHighlighter facesHighlighter = new ImageHighlighter();
-            facesHighlighter.Highlight(bitmap, faces);
+                ImageHighlighter facesHighlighter = new ImageHighlighter();
+                facesHighlighter.Highlight(bitmap, faces);
 
-            bitmap.Save(_outputFile, ImageFormat.Png);
+                bitmap.Save(_outputFile, ImageFormat.Png);
+            }
         }
     }
 }
