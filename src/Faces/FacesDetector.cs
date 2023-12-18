@@ -4,20 +4,32 @@ using System.Drawing;
 
 namespace Phototagger.Faces
 {
+    /// <summary>
+    /// Detects human faces in a bitmap file
+    /// </summary>
     public class FacesDetector
     {
         private IOverlapFilter _filter;
 
+        /// <summary>
+        /// Creates a face detector.
+        /// </summary>
+        /// <remarks>
+        /// Uses the <see cref="FaceOverlapFilter"/> to handle conflict or overlapping matches.
+        /// </remarks>
         public FacesDetector()
             : this(new FaceOverlapFilter())
         {
         }
 
-        internal FacesDetector(IOverlapFilter overlapFilter)
+        public FacesDetector(IOverlapFilter overlapFilter)
         {
             _filter = overlapFilter;
         }
 
+        /// <summary>
+        /// Returns zero or more locations within bitmap that appear to be human faces
+        /// </summary>
         public List<Rectangle> Find(Bitmap bitmap)
         { 
             // In order to use a HaarObjectDetector, first we have to tell it

@@ -24,7 +24,7 @@ namespace Phototagger.UserOptions
             FacesDetector detector = new FacesDetector();
             var faces = detector.Find(bitmap);
 
-            FacesHighlighter facesHighlighter = new FacesHighlighter();
+            ImageHighlighter facesHighlighter = new ImageHighlighter();
             facesHighlighter.Highlight(bitmap, faces);
 
             bitmap.Save(_outputFile, ImageFormat.Png);
