@@ -1,7 +1,7 @@
 ﻿using Accord.Imaging.Filters;
 using System.Collections.Generic;
 using System.Drawing;
-namespace Phototagger.Faces
+namespace Phototagger.Imaging
 {
     public class ImageHighlighter
     {
